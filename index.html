@@ -15,23 +15,33 @@
 </head>
 
 <body>
-    <div class="container-fluid">
-        <div class="row vh-100 vw-100 justify-content-center align-items-center">
-            <div class="col-5 border">
-                <div class="title">
-                    <p>BMI calculator</p>
+    <div class="container-fluid my-container-fluid">
+        <div class="row vh-100 vw-100 justify-content-center align-items-center my-row">
+            <div class="col-md-6 col-9 border shadow p-0 my-col rounded-4 overflow-hidden">
+                <div class="title border w-100 text-center d-flex align-items-center justify-content-center">
+                    <span class=" display-5">BMI calculator</span>
                 </div>
 
-                <div class="result">
-                    enter your weight and height
-                </div>
-
-                <div class="weight-height-input-div">
-                    <div class="weight-input-div">
-                        <input type="text"> <p>2 kg</p>
+                <div class="result d-flex justify-content-center align-items-center w-100 my-4">
+                    <div class="w-75 p-md-5 p-3 rounded-5 shadow text-center">
+                        <span>enter your weight and height</span>
                     </div>
-                    <div class="height-input-div">
-                        <input type="text"> <p>2 cm</p>
+                </div>
+
+                <div class="weight-height-input-div w-100 my-4">
+                    <div class="weight-input-div w-100 d-flex justify-content-around align-items-center mb-2">
+                        <div class="w-75">
+                            <label for="weight" class="form-label">weight</label>
+                            <input type="range" class="form-range" min="10" max="200" step="1" id="weight">
+                        </div>
+                        <span>2 kg</span>
+                    </div>
+                    <div class="height-input-div w-100 d-flex justify-content-around align-items-center">
+                        <div class="w-75">
+                            <label for="height" class="form-label">height</label>
+                            <input type="range" class="form-range" min="10" max="200" step="1" id="height">
+                        </div>
+                        <span>2 cm</span>
                     </div>
                 </div>
             </div>

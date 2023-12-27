@@ -1,12 +1,20 @@
 @font-face {
   font-family: "title-font";
-  src: url(../font/blackout-master/Blackout\ 2\ AM.ttf);
+  src: url(../font/blackout-master/Blackout\ Midnight.ttf);
 }
 * {
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
+  text-transform: capitalize;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+.my-container-fluid .my-row .my-col .title {
+  background-color: rgb(171, 186, 186);
+}
+.my-container-fluid .my-row .my-col .title span {
+  font-family: "title-font";
 }
 
 /*# sourceMappingURL=main.css.map */
