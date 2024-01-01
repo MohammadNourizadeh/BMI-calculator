@@ -16,5 +16,18 @@
 .my-container-fluid .my-row .my-col .title span {
   font-family: "title-font";
 }
+.my-container-fluid .my-row .my-col .weight-height-input-div div div input::-moz-range-thumb {
+  background: rgb(171, 186, 186);
+}
+.my-container-fluid .my-row .my-col .btn-div button {
+  background-color: rgb(171, 186, 186);
+  padding: 0.4rem 4rem;
+  transition: padding 0.2s ease-in-out;
+}
+.my-container-fluid .my-row .my-col .btn-div button:hover {
+  background-color: rgb(136, 148, 148);
+  padding: 0.4rem 6rem;
+  transition: padding 0.4s ease-in-out;
+}
 
 /*# sourceMappingURL=main.css.map */
