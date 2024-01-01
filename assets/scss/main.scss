@@ -49,11 +49,11 @@
                 button {
                     color: black;
                     background-color: rgb(171, 186, 186);
-                    padding: .4rem 4rem;
+                    padding: .4rem 2rem;
                     transition: padding .2s ease-in-out;
 
                     &:hover {
-                        padding: .4rem 6rem;
+                        padding: .4rem 3rem;
                         transition: padding .4s ease-in-out;
                     }
 

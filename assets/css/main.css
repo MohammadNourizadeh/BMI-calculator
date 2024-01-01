@@ -22,11 +22,11 @@
 .my-container-fluid .my-row .my-col .btn-div button {
   color: black;
   background-color: rgb(171, 186, 186);
-  padding: 0.4rem 4rem;
+  padding: 0.4rem 2rem;
   transition: padding 0.2s ease-in-out;
 }
 .my-container-fluid .my-row .my-col .btn-div button:hover {
-  padding: 0.4rem 6rem;
+  padding: 0.4rem 3rem;
   transition: padding 0.4s ease-in-out;
 }
 .my-container-fluid .my-row .my-col .btn-div button:active {
