@@ -47,14 +47,18 @@
             .btn-div {
 
                 button {
+                    color: black;
                     background-color: rgb(171, 186, 186);
                     padding: .4rem 4rem;
                     transition: padding .2s ease-in-out;
 
                     &:hover {
-                        background-color: rgb(136, 148, 148);
                         padding: .4rem 6rem;
                         transition: padding .4s ease-in-out;
+                    }
+
+                    &:active {
+                        background-color: rgb(136, 141, 141);
                     }
                 }
             }
