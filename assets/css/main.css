@@ -10,6 +10,24 @@
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 
+.my-container-fluid .my-row .solution-div {
+  width: 12rem;
+  height: 1.5rem;
+  background-color: rgb(171, 186, 186);
+  transition: height 0.5s ease-in-out;
+  cursor: pointer;
+}
+.my-container-fluid .my-row .solution-div:hover {
+  height: 10rem;
+  transition: height 0.5s ease-in-out;
+}
+.my-container-fluid .my-row .solution-div:active {
+  height: 10rem;
+  transition: height 0.5s ease-in-out;
+}
+.my-container-fluid .my-row .solution-div ul {
+  list-style: none;
+}
 .my-container-fluid .my-row .my-col .title {
   background-color: rgb(171, 186, 186);
 }
