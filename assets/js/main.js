@@ -19,6 +19,11 @@ btn.addEventListener('click', (e) => {
     };
 
     if (heightInput.value !== '' && weightInput.value !== '') {
+        
+        const dietDiv = document.getElementById('diet-div');
+        const diet = document.getElementById('diet');
+
+
         const res = weightInput.value / ((heightInput.value * .01) ** 2);
 
         if (res < 18.5) {
@@ -28,6 +33,19 @@ btn.addEventListener('click', (e) => {
             <span class="text-uppercase">underweight</span>
         </div>
         `
+         
+        dietDiv.classList.remove('d-none');
+            diet.innerHTML = `
+            <ul>
+                <li>rice</li>
+                <li>fish</li>
+                <li>egg</li>
+                <li>bread</li>
+                <li>meat</li>
+                <li>Fruit</li>
+                <li>milk</li>
+            </ul>
+            `
         }
         if (18.5 <= res && res <= 24.9) {
             resultDiv.innerHTML = `
@@ -36,6 +54,8 @@ btn.addEventListener('click', (e) => {
             <span class="text-uppercase">normal</span>
         </div>
         `
+
+        dietDiv.classList.add('d-none');
         }
         if (25 <= res && res <= 29.9) {
             resultDiv.innerHTML = `
