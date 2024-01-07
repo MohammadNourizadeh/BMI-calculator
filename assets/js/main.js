@@ -19,7 +19,7 @@ btn.addEventListener('click', (e) => {
     };
 
     if (heightInput.value !== '' && weightInput.value !== '') {
-        
+
         const dietDiv = document.getElementById('diet-div');
         const diet = document.getElementById('diet');
 
@@ -33,8 +33,8 @@ btn.addEventListener('click', (e) => {
             <span class="text-uppercase">underweight</span>
         </div>
         `
-         
-        dietDiv.classList.remove('d-none');
+
+            dietDiv.classList.remove('d-none');
             diet.innerHTML = `
             <ul>
                 <li>rice</li>
@@ -46,6 +46,19 @@ btn.addEventListener('click', (e) => {
                 <li>milk</li>
             </ul>
             `
+
+            dietDiv.classList.remove('d-none');
+            diet.innerHTML = `
+                <ul>
+                    <li>rice</li>
+                    <li>fish</li>
+                    <li>egg</li>
+                    <li>bread</li>
+                    <li>meat</li>
+                    <li>Fruit</li>
+                    <li>milk</li>
+                </ul>
+                `
         }
         if (18.5 <= res && res <= 24.9) {
             resultDiv.innerHTML = `
@@ -55,7 +68,7 @@ btn.addEventListener('click', (e) => {
         </div>
         `
 
-        dietDiv.classList.add('d-none');
+            dietDiv.classList.add('d-none');
         }
         if (25 <= res && res <= 29.9) {
             resultDiv.innerHTML = `
@@ -63,6 +76,19 @@ btn.addEventListener('click', (e) => {
             <img src="./assets/img/betw25.0-29.9.png" alt="underweight">
             <span class="text-uppercase">overweight</span>
         </div>
+        `
+
+            dietDiv.classList.remove('d-none');
+            diet.innerHTML = `
+        <ul>
+            <li>chicken breast</li>
+            <li>Lean beef</li>
+            <li>Greek yogurt</li>
+            <li>Green Peas</li>
+            <li>egg</li>
+            <li>lentils</li>
+            <li>Cauliflower</li>
+        </ul>
         `
         }
         if (30 <= res) {
@@ -72,6 +98,19 @@ btn.addEventListener('click', (e) => {
             <span class="text-uppercase">obese</span>
         </div>
         `
+
+            dietDiv.classList.remove('d-none');
+            diet.innerHTML = `
+        <ul>
+            <li>Beans</li>
+            <li>lentils</li>
+            <li>Pea</li>
+            <li>almonds</li>
+            <li>Sunflower seeds</li>
+            <li>Hazelnut</li>
+            <li>exercise!!!!</li>
+        </ul>
+    `
         }
 
     };
