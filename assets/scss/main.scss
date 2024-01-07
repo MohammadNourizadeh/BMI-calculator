@@ -15,26 +15,17 @@
 
     .my-row {
 
-        .solution-div{
+        .diet-div {
             width: 12rem;
             height: 1.5rem;
             background-color: rgb(171, 186, 186);
             transition: height .5s ease-in-out;
             cursor: pointer;
 
-            &:hover{
+            &:hover {
                 height: 10rem;
                 transition: height .5s ease-in-out;
 
-            }
-            &:active{
-                height: 10rem;
-                transition: height .5s ease-in-out;
-
-            }
-
-            ul{
-                list-style: none;
             }
         }
 
